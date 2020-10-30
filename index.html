@@ -11,17 +11,16 @@
 
 <body>
   <header><h1>Want some random dog pics to brighten up your day?</h1></header>
-  <form class="group">
-    <div class="item">
-      <label for="dogs">Please enter a number between 1 and 50: </label><br>
-      <input type="number" name="dogs" class="js-number-of-dogs" autofocus="on" min="1" max="50" value="3" required />
-    </div>
-    <div class="item">
-      <button type="submit" id="button">Click here!</button>
-    </div>  
+  <form>
+    <label for="dogs">Please enter a number between 1 and 50: </label><br>
+    <input type="number" name="dogs" class="js-number-of-dogs" autofocus="on" min="1" max="50" value="3" required />
+    <hr>
+    <button type="submit" id="button">Click here!</button>
   </form>
-  <div class="js-dog-pics-container">
-  <!--add containter here-->
+  <hr>
+  <div class="group">
+    <div class="item js-dog-pics-container dog-pics-container">
+    </div>
   </div>
   <script src="https://code.jquery.com/jquery-3.4.1.slim.js" crossorigin="anonymous"></script>
   <script src="index.js"></script>
