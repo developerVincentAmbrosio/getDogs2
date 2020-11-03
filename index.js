@@ -19,12 +19,12 @@ function getDogPicsListener() {
 function renderImageUrls(urls){
 console.log(urls);   
   for (let i = 0; i < urls.length; i++) {
-    $('.js-dog-pics-container').append(dogPicTemplate(urls[i])).html();
+    $('.js-dog-pics-container').replaceWith(dogPicTemplate(urls[i])).html();
   }
 }
 
 function dogPicTemplate(imageUrl) {
-  return `<img src='${imageUrl}'/>`;
+  return `<img src="${imageUrl}" class="js-dog-pic-container">`;
 }
 
 $(function() {
