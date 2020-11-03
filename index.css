@@ -73,7 +73,7 @@ button {
 }
 
 .dog-pic-container img {
-  max-width: 300px;
+  max-width: 350px;
   padding: 5px;
   margin: 0 auto;
   flex-shrink: 0;
@@ -85,15 +85,18 @@ button {
   
 @media all and (min-width: 600px) {
   .group {
-    flex-direction: column;
+    flex-direction: row;
   } 
 
   .item {
-    flex: 2;
+    flex: 1;
   }   
 
-  .dog-pics-container img {
-    padding: 10px;  
+  .dog-pic-container img {
+    width: 100%;
+    max-width: 600px;
+    padding: 10px;
+    display: inline;
   }
 
 }
