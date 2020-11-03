@@ -17,14 +17,15 @@ function getDogPicsListener() {
 }
 
 function renderImageUrls(urls){
-console.log(urls);   
+console.log(urls);
+$('.js-dog-pic-container').empty();   
   for (let i = 0; i < urls.length; i++) {
-    $('.js-dog-pics-container').replaceWith(dogPicTemplate(urls[i])).html();
+    $('.js-dog-pic-container').append(dogPicTemplate(urls[i]));
   }
 }
 
 function dogPicTemplate(imageUrl) {
-  return `<img src="${imageUrl}" class="js-dog-pic-container">`;
+  return `<img src="${imageUrl}"/>`;
 }
 
 $(function() {
